@@ -2139,23 +2139,25 @@ box-shadow: none;
     display: block;
     width: 100%;
     min-width: 0;
-    height: 56px;
-    min-height: 56px;
-    max-height: 56px;
-    padding: 12px 16px;
+    height: 52px;
+    min-height: 52px;
+    max-height: 52px;
+    padding: 12px 14px;
+    margin: 0;
     box-sizing: border-box;
 
+    background: #222222;
+    color: #ffffff;
+    border: 1px solid #514536;
+    border-radius: 6px;
+
+    font-family: inherit;
     font-size: 16px;
     line-height: normal;
-    color: #ffffff;
-    background: #222222;
-
-    border: 1px solid #5a4a35;
-    border-radius: 8px;
 
     color-scheme: dark;
-    -webkit-appearance: auto;
-    appearance: auto;
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 #bookingDate::-webkit-date-and-time-value {
