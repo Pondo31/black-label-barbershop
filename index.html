@@ -1,0 +1,421 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BLACK LABEL — Premium Barbershop</title>
+
+    <meta name="description"
+          content="BLACK LABEL — премиальный барбершоп. Стрижки, оформление бороды и безупречный стиль.">
+
+    <link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container header-content">
+
+       
+<button
+    class="menu-toggle"
+    id="menuToggle"
+    type="button"
+    aria-label="Открыть меню"
+    aria-expanded="false"
+    aria-controls="mobileNav"
+>
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
+
+<nav class="nav" id="mobileNav" aria-label="Главное меню">
+    <a href="#home">Главная</a>
+    <a href="#about">О нас</a>
+    <a href="#services">Услуги</a>
+    <a href="#gallery">Галерея</a>
+    <a href="#contact">Контакты</a>
+    <a href="#team">Барберы</a>
+</nav>
+
+
+        </div>
+    </header>
+
+    <!-- Главный экран -->
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-overlay"></div>
+
+            <div class="container hero-content">
+
+                <p class="hero-subtitle">
+                    PREMIUM BARBERSHOP
+                </p>
+
+                <h1>
+                    ТВОЙ СТИЛЬ.<br>
+                    <span>ТВОИ ПРАВИЛА.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Искусство мужской стрижки.
+                    Безупречная точность.
+                    Атмосфера настоящего барбершопа.
+                </p>
+
+                <a href="#services" class="hero-btn">
+                    НАШИ УСЛУГИ
+                </a>
+
+            </div>
+        </section>
+
+        <!-- О нас -->
+       
+<section class="about" id="about">
+    <div class="container about-grid">
+
+        <div class="about-image">
+            <img
+                src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=900&q=85"
+                alt="Интерьер барбершопа"
+                loading="lazy"
+            >
+        </div>
+
+        <div class="about-content">
+
+            <p class="section-subtitle">
+                НАША ФИЛОСОФИЯ
+            </p>
+
+            <h2>
+                БОЛЬШЕ, ЧЕМ
+                <span>ПРОСТО СТРИЖКА.</span>
+            </h2>
+
+            <p class="about-text">
+                BLACK LABEL — пространство, где
+                классические традиции барберинга
+                встречаются с современным стилем.
+            </p>
+
+            <p class="about-text">
+                Мы верим, что идеальная стрижка —
+                это не просто работа мастера,
+                а отражение индивидуальности.
+            </p>
+
+            <a href="#services" class="hero-btn">
+                НАШИ УСЛУГИ
+            </a>
+
+        </div>
+    </div>
+</section>
+
+
+        <!-- Услуги -->
+     
+<section class="services" id="services">
+    <div class="container">
+
+        <p class="section-subtitle">ПРАЙС-ЛИСТ</p>
+        <h2>НАШИ <span>УСЛУГИ</span></h2>
+
+        <div class="services-grid">
+
+            <article class="service-card">
+                <img
+                    src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=800&q=85"
+                    alt="Мужская стрижка"
+                    loading="lazy"
+                >
+
+                <div class="service-info">
+                    <span class="service-number">01</span>
+                    <h3>Мужская стрижка</h3>
+                    <p>Точность, стиль и индивидуальный подход.</p>
+                    <span class="price">от 700 ₴</span>
+                    <a href="#contact" class="service-btn">
+                        ЗАПИСАТЬСЯ
+                    </a>
+                </div>
+            </article>
+
+            <article class="service-card">
+                <img
+                    src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=85"
+                    alt="Оформление бороды"
+                    loading="lazy"
+                >
+
+                <div class="service-info">
+                    <span class="service-number">02</span>
+                    <h3>Оформление бороды</h3>
+                    <p>Идеальные контуры и профессиональный уход.</p>
+                    <span class="price">от 450 ₴</span>
+                    <a href="#contact" class="service-btn">
+                        ЗАПИСАТЬСЯ
+                    </a>
+                </div>
+            </article>
+
+            <article class="service-card">
+                <img
+                    src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=85"
+                    alt="Стрижка и оформление бороды"
+                    loading="lazy"
+                >
+
+                <div class="service-info">
+                    <span class="service-number">03</span>
+                    <h3>Стрижка + борода</h3>
+                    <p>Комплексный уход и завершённый образ.</p>
+                    <span class="price">от 1000 ₴</span>
+                    <a href="#contact" class="service-btn">
+                        ЗАПИСАТЬСЯ
+                    </a>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- Галерея работ -->
+<section class="gallery" id="gallery">
+    <div class="container">
+
+        <p class="section-subtitle">НАШИ РАБОТЫ</p>
+
+        <h2>ИСКУССТВО <span>В ДЕТАЛЯХ</span></h2>
+
+        <p class="gallery-description">
+            Стиль начинается с деталей.
+            Вдохновляйся и выбирай свой образ.
+        </p>
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item">
+                <img
+                    src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=800&q=85"
+                    alt="Процесс мужской стрижки"
+                    loading="lazy"
+                >
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=85"
+                    alt="Барбер за работой"
+                    loading="lazy"
+                >
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=85"
+                    alt="Инструменты барбера"
+                    loading="lazy"
+                >
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    src="https://images.unsplash.com/photo-1593702295094-aea22597af65?auto=format&fit=crop&w=800&q=85"
+                    alt="Стильная мужская стрижка"
+                    loading="lazy"
+                >
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    src="https://images.unsplash.com/photo-1590540179852-2110a54f813a?auto=format&fit=crop&w=800&q=85"
+                    alt="Мужской стиль"
+                    loading="lazy"
+                >
+            </div>
+
+            <div class="gallery-item">
+                <img
+                    src="https://images.unsplash.com/photo-1596727147705-61a532a659bd?auto=format&fit=crop&w=800&q=85"
+                    alt="Атмосфера барбершопа"
+                    loading="lazy"
+                >
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- Команда барберов -->
+<section class="team" id="team">
+    <div class="container">
+
+        <p class="section-subtitle">НАША КОМАНДА</p>
+        <h2>МАСТЕРА <span>СВОЕГО ДЕЛА</span></h2>
+
+        <p class="team-description">
+            Стиль создают люди, которые любят своё дело.
+        </p>
+
+        <div class="team-grid">
+
+            <article class="team-card">
+                <div class="team-photo">
+                  <!-- Александр -->
+<img src="images/alexander.png" alt="Иллюстрация мастера Александра в барбершопе" loading="lazy">
+                </div>
+                <h3>АЛЕКСАНДР</h3>
+                <p>TOP BARBER</p>
+            </article>
+
+            <article class="team-card">
+                <div class="team-photo">
+                  <img src="images/maxim.png" alt="Иллюстрация мастера Максима за стрижкой" loading="lazy">
+                </div>
+                <h3>МАКСИМ</h3>
+                <p>FADE SPECIALIST</p>
+            </article>
+
+            <article class="team-card">
+                <div class="team-photo">
+                  <img src="images/daniil.png" alt="Иллюстрация мастера Даниила за оформлением бороды" loading="lazy">
+                </div>
+                <h3>ДАНИИЛ</h3>
+                <p>BEARD EXPERT</p>
+            </article>
+
+        </div>
+        <!-- Контакты -->
+       
+<!-- Запись к барберу -->
+<section class="contact" id="contact">
+    <div class="container">
+
+        <p class="section-subtitle">BLACK LABEL BOOKING</p>
+        <h2>ЗАПИСЬ <span>К БАРБЕРУ</span></h2>
+
+        <p class="booking-intro">
+            Выбери услугу, мастера и удобное время.
+        </p>
+
+        <form class="booking-form" id="bookingForm">
+
+            <div class="form-group">
+                <label for="bookingService">Услуга</label>
+                <select id="bookingService" required>
+                    <option value="">Выберите услугу</option>
+                    <option value="Мужская стрижка">
+                        Мужская стрижка — от 700 ₴
+                    </option>
+                    <option value="Оформление бороды">
+                        Оформление бороды — от 450 ₴
+                    </option>
+                    <option value="Стрижка + борода">
+                        Стрижка + борода — от 1000 ₴
+                    </option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="bookingBarber">Мастер</label>
+                <select id="bookingBarber" required>
+                    <option value="">Выберите мастера</option>
+                    <option value="Александр">Александр</option>
+                    <option value="Максим">Максим</option>
+                    <option value="Даниил">Даниил</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="bookingDate">Дата</label>
+                    <input
+                        type="date"
+                        id="bookingDate"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="bookingTime">Время</label>
+                    <select id="bookingTime" required>
+                        <option value="">Выберите время</option>
+                        <option>10:00</option>
+                        <option>11:00</option>
+                        <option>12:00</option>
+                        <option>13:00</option>
+                        <option>14:00</option>
+                        <option>15:00</option>
+                        <option>16:00</option>
+                        <option>17:00</option>
+                        <option>18:00</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="bookingName">Ваше имя</label>
+                <input
+                    type="text"
+                    id="bookingName"
+                    placeholder="Введите имя"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="bookingPhone">Телефон</label>
+                <input
+                    type="tel"
+                    id="bookingPhone"
+                    placeholder="+380..."
+                    required
+                >
+            </div>
+
+            <button type="submit" class="booking-btn">
+                ПРОВЕРИТЬ ЗАПИСЬ
+            </button>
+
+            <p class="booking-result"
+               id="bookingResult"
+               role="status"
+               aria-live="polite"></p>
+
+        </form>
+
+        <p class="demo-note">
+            Демонстрационная форма.
+            Настоящая запись пока не подключена.
+        </p>
+
+    </div>
+</section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>BLACK LABEL © 2026</p>
+            <p>Демонстрационный проект для портфолио</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
