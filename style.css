@@ -316,34 +316,75 @@ section h2 {
     text-align: left;
 }
 
+/* BLACK LABEL — ABOUT SECTION */
+
 .about-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 60px;
     align-items: center;
 }
 
 .about-image {
     position: relative;
+    width: 100%;
+    max-width: 480px;
+    min-width: 0;
+    isolation: isolate;
 }
 
 .about-image img {
-    width: 100%;
-    height: 550px;
-    object-fit: cover;
     display: block;
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    object-position: center;
     filter: brightness(0.8);
 }
 
 .about-image::after {
     content: "";
     position: absolute;
-    top: 25px;
-    left: 25px;
-    width: 100%;
-    height: 100%;
+    inset: 0;
     border: 2px solid #c9a46a;
-    z-index: -1;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.about-content {
+    min-width: 0;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .about-image {
+        max-width: 480px;
+        margin: 0 auto;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .about-image {
+        width: calc(100% - 20px);
+        max-width: 420px;
+    }
+
+    .about-image img {
+        height: 340px;
+    }
+
+    .about-image::after {
+        top: 15px;
+        left: 15px;
+        right: -15px;
+        bottom: -15px;
+    }
 }
 
 .about-content h2 {
@@ -2057,29 +2098,38 @@ box-shadow: none;
         cursor: pointer;
     }
 }
+/* BLACK LABEL — iPhone Safari Date Fix */
 
-/* BLACK LABEL — SMOOTH NAVIGATION */
+.booking-form input[type="date"] {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    height: 52px;
+    min-height: 52px;
+    max-height: 52px;
+    padding: 12px 14px;
+    box-sizing: border-box;
 
-/* Плавная прокрутка по ссылкам */
-html {
-    scroll-behavior: smooth;
+    background: #222222;
+    color: #ffffff;
+    color-scheme: dark;
+
+    border: 1px solid #514536;
+    border-radius: 6px;
+
+    font-size: 16px;
+    line-height: normal;
+
+    -webkit-appearance: none;
+    appearance: none;
 }
 
-/* Отступ при переходе к разделу */
-section[id] {
-    scroll-margin-top: 100px;
+.booking-form input[type="date"]::-webkit-date-and-time-value {
+    min-height: 1em;
+    text-align: left;
 }
 
-/* На телефоне плавающая кнопка компактнее */
-@media (max-width: 768px) {
-    section[id] {
-        scroll-margin-top: 85px;
-    }
-}
-
-/* Для пользователей с отключёнными анимациями */
-@media (prefers-reduced-motion: reduce) {
-    html {
-        scroll-behavior: auto;
-    }
+.booking-form input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 1;
+    cursor: pointer;
 }
